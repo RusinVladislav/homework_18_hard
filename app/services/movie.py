@@ -54,3 +54,6 @@ class MovieServices:
 
     def delete(self, mid):
         self.dao.delete(mid)
+
+    def get_by_fields(self, **kwargs):
+        return self.dao.get_by_fields(**kwargs)

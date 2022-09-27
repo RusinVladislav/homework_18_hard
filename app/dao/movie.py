@@ -31,3 +31,6 @@ class MovieDAO:
         
         self.session.add(movie)
         self.session.commit()
+
+    def get_by_fields(self, **kwargs):
+        return self.session.query(Movie).filter_by(**kwargs).all()

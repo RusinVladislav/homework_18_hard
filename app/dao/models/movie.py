@@ -1,7 +1,7 @@
 from marshmallow import Schema, fields
 from app.database import db
-from director import DirectorSchema
-from genre import GenreSchema
+from app.dao.models.director import DirectorSchema
+from app.dao.models.genre import GenreSchema
 
 
 class Movie(db.Model):
